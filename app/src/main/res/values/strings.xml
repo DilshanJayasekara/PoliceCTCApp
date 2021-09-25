@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">PoliceCTCApp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_account">Account</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="register_user">Register User</string>
+    <string name="get_on_bord">Get On Bord</string>
+    <string name="occupation">Occupation</string>
+    <string name="mobile">Mobile</string>
+    <string name="email_address">Email Address</string>
+    <string name="nic">NIC</string>
 </resources>

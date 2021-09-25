@@ -3,7 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/orders.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/search.xml" value="0.1453125" />
+        <entry key="app/src/main/res/drawable-v24/setting.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/support.xml" value="0.1265625" />
+        <entry key="app/src/main/res/drawable/common_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/menu_back.xml" value="0.1265625" />
+        <entry key="app/src/main/res/drawable/menu_back_state.xml" value="0.1265625" />
+        <entry key="app/src/main/res/drawable/menu_item_padding.xml" value="0.1265625" />
+        <entry key="app/src/main/res/drawable/next_button_round.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/round_button.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29128205128205126" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/content_account.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.3143863294354082" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/menu.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.11041666666666666" />
       </map>
     </option>
   </component>
