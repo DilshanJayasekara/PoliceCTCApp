@@ -24,10 +24,10 @@
     <color name="errorMessageIconColor">#A30101</color>
     <color name="errorMessageTextColor">#FFFFFF</color>
     <color name="errorMessageBackgroundColor">#222121</color>
-
-
     <color name="transparent">#50FFFFFF</color>
-
     <color name="parking_slot">#4F3F91</color>
     <color name="button_color">#0266B0</color>
+    <color name="sign_up_edit_texts_hint">#CFCFCF</color>
+    <color name="sign_up_edit_texts_tint_text_headings">#FFFFFF</color>
+    <color name="public_parking_slot">#0266B0</color>
 </resources>

@@ -32,7 +32,7 @@
                     android:id="@+id/setting"
                     />
                 <item
-                    android:title="Support"
+                    android:title="Log Out"
                     android:icon="@drawable/support"
                     android:id="@+id/support"
                     />

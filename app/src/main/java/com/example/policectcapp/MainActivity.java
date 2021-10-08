@@ -7,9 +7,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import android.view.MenuItem;
+
+import android.content.Intent;
 import com.google.android.material.navigation.NavigationView;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.os.Bundle;
 
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
     NavigationView navigationView;
+    Fragment fragment=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,44 +30,34 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView=findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                int id=menuItem.getItemId();
-                Fragment fragment=null;
-                switch (id)
-                {
-                    case R.id.register:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    case R.id.basket:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    case R.id.promo_code:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    case R.id.orders:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    case R.id.setting:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    case R.id.support:
-                        fragment=new RegisterFragment();
-                        loadFragment(fragment);
-                        break;
-                    default:
-                        return true;
-                }
-                return true;
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            int id=menuItem.getItemId();
+
+            switch (id)
+            {
+                case R.id.register:
+                    startActivity(new Intent(MainActivity.this,
+                            RegisterFirst.class));
+                    break;
+                case R.id.basket:
+                    startActivity(new Intent(MainActivity.this,
+                            GenerateQRCode.class));
+                    break;
+                default:
+                    return true;
             }
+            return true;
         });
+        fragment=new MainMapsFragment();
+        loadFragment(fragment);
     }
+
+    @Override
+    public void onBackPressed() {
+        this.finish();
+        super.onBackPressed();
+    }
+
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
@@ -74,4 +65,5 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.closeDrawer(GravityCompat.START);
         fragmentTransaction.addToBackStack(null);
     }
+
 }

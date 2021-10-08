@@ -13,7 +13,7 @@
         >
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:background="#fff"
+            android:background="#073057"
             android:id="@+id/toolBar"
             app:popupTheme="@style/AppTheme.popUpOverlay"
             app:layout_scrollFlags="scroll|enterAlways"
@@ -24,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frame"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
     </FrameLayout>
 
